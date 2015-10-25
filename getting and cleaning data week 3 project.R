@@ -76,4 +76,4 @@ keepColsActivity<-grep("*Mean*|*Std Dev*",colnames(mergeDataActivity))
 activityAll<-melt(mergeDataActivity,id=c("Activity", "Subject"), measure.vars = keepColsActivity)## !c("Activity Type", "Subject Id", "Activity Id")))
 
 activityAverage<-dcast(activityAll,Activity+Subject ~variable,mean)
-write.table(activityAverage, "activityAverage.txt", row.names = FALSE)
+write.table(activityAverage, "tidyData.txt", row.names = FALSE)
