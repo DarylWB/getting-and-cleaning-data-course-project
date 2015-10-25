@@ -17,3 +17,5 @@ stage 3 merge activity name
 stage 4 improve readability for metric columns
 
 stage 5 average value over activity and subject
+
+Result equals tidy dataset tidyData.txt 
